@@ -17,7 +17,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
-require("./index.scss");
 var logo = require('../lib/logo.svg');
 var MyComponenent = /** @class */ (function (_super) {
     __extends(MyComponenent, _super);
@@ -25,9 +24,14 @@ var MyComponenent = /** @class */ (function (_super) {
         return _super.call(this, props) || this;
     }
     MyComponenent.prototype.render = function () {
-        return (react_1.default.createElement("div", { className: "mytest" },
-            react_1.default.createElement("img", { src: logo, className: "App-logo", alt: "logo" }),
-            "Hello Component!"));
+        return (react_1.default.createElement("div", { className: "App" },
+            react_1.default.createElement("header", { className: "App-header" },
+                react_1.default.createElement("img", { src: logo, className: "App-logo", alt: "logo" }),
+                react_1.default.createElement("p", null,
+                    "Edit ",
+                    react_1.default.createElement("code", null, "src/components/index.tsx"),
+                    " and save to reload."),
+                react_1.default.createElement("a", { className: "App-link", href: "https://reactjs.org", target: "_blank", rel: "noopener noreferrer" }, "My Component!"))));
     };
     return MyComponenent;
 }(react_1.default.Component));

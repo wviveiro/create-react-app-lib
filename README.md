@@ -24,7 +24,7 @@ This module was created following the steps:
 
 5. Edit a few lines in tsconfig compuler to use `commonjs`, output the files in the `dist` folder, include ONLY folder `component` inside `src` and add declaration to output
 
-6. Edit `package.json` to run `tsc` on build and set the main file of the project and `node-sass`. BE AWARE it only compiles the `index.scss` inside `src/components`. If you have more than one scss, import them altogether inside this file.
+6. Edit `package.json` to run `tsc` on build and set the main file of the project and `node-sass`. BE AWARE it only compiles the `index.scss` inside `src/styles`. If you have more than one scss, import them altogether inside this file. Do not include scss in your component folder.
 7. Create folder `src/components` where component will be located
 8. Create `src/lib` folder which are files that will be copied over only when build is run
 9. Remove files not necessary created from CRA and organise other files for better experience only

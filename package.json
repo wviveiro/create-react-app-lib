@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && rm -rf lib && tsc --p ./tscompiler && node-sass ./src/components/index.scss ./dist/index.css --output-style compressed && cp -R ./src/lib ./lib",
+    "build": "rm -rf dist lib styles && tsc --p ./tscompiler && node-sass ./src/styles/index.scss ./styles/index.css --output-style compressed && cp -R ./src/lib ./lib",
     "build-cra": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
